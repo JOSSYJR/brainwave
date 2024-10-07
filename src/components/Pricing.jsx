@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
@@ -5,6 +6,12 @@ import PricingList from "./PricingList";
 import { LeftLine, RightLine } from "./design/Pricing";
 
 const Pricing = () => {
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setPopupVisible(!isPopupVisible);
+  };
+
   return (
     <Section className="overflow-hidden" id="pricing">
       <div className="container relative z-2">
@@ -28,8 +35,8 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag="Get started with Brainwave"
-          title="Pay once, use forever"
+          tag="Get started a Call Back from us"
+          title="Contact Us"
         />
 
         <div className="relative">
@@ -39,13 +46,70 @@ const Pricing = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          <a
+          <button
             className="text-xs font-code font-bold tracking-wider uppercase border-b"
-            href="/pricing"
+            onClick={togglePopup}
           >
-            See the full details
-          </a>
+            Contact Us Form
+          </button>
         </div>
+
+        {isPopupVisible && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="bg-white p-8 rounded shadow-lg">
+              <h2 className="text-xl mb-4">Contact Us</h2>
+              <form>
+                <div className="mb-4">
+                  <label className="block text-sm font-bold mb-2" htmlFor="name">
+                    Name
+                  </label>
+                  <input
+                    className="w-full p-2 border border-gray-300 rounded"
+                    type="text"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-bold mb-2" htmlFor="phone">
+                    Phone
+                  </label>
+                  <input
+                    className="w-full p-2 border border-gray-300 rounded"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-bold mb-2" htmlFor="message">
+                    Message
+                  </label>
+                  <textarea
+                    className="w-full p-2 border border-gray-300 rounded"
+                    id="message"
+                    name="message"
+                  ></textarea>
+                </div>
+                <div className="flex justify-end">
+                  <button
+                    type="button"
+                    className="mr-4 px-4 py-2 bg-gray-300 rounded"
+                    onClick={togglePopup}
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
       </div>
     </Section>
   );

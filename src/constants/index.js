@@ -39,22 +39,17 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "About Us",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
+    title: "Contact Us",
     url: "#pricing",
   },
   {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
     id: "3",
-    title: "Roadmap",
+    title: "Our Projects",
     url: "#roadmap",
   },
   {
@@ -94,51 +89,52 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Property Management Systems",
+    text: "AN ENTERPRISE-GRADE DIGITAL LEASE CONTRACT AND TENANT LIFE CYCLE MANAGEMENT SYSTEM.",
+    date: "Oct 2024",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    title: "Stable Duel ",
+    text:  "StableDuel is a new game that is taking horse racing by storm with its recent release of an iOS and Android app. Daily Fantasy Sports meets the thrill of horse racing using the well-known salary-cap style DFS game platform",
+    date: "Jun 2024",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    title: "SEMAH MCH Center",
+    text:  "Semah Hospital is a user-friendly website that allows patients to easily make reservations with their preferred healthcare providers. The website also features a blog section to keep users up-to-date.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
+    title: "Etach Bet Guest House ",
+    text: "At Etachbet Guest House is a User-Friendly website that allows users to easily book reservations.and manage the Guest house rental units and Staffs as well.",
+    date: "Sep 2024",
+    status: "done",
     imageUrl: roadmap4,
   },
 ];
 
+
+
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "We Use Top Technologies To Deliver Top Notch Solutions.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Clean and Modern Design",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Budget Friendly Solutions ",
   },
   {
     id: "2",
@@ -206,54 +202,22 @@ export const collabApps = [
 ];
 
 export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
+
 ];
 
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Custom Solutions",
+    text: "Sweaven delivers custom software and app solutions, tailored to your unique business needs.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Enterprise Resource Planning",
+    text: "Our ERP systems evolve with your business, ensuring constant innovation and growth.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +225,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Access our Services",
+    text: "Seamlessly access your apps and software across all devices, ensuring maximum convenience.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Mobile App Development",
+    text: "We build high-performance mobile apps, enabling you to reach your customers on any device.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +242,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Branding Excellence",
+    text: "Strengthen your brand identity with Sweaven's professional website and app branding services.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Expert Training",
+    text: "Empower your team with expert training from Sweaven to maximize the potential of your digital tools.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -295,34 +259,16 @@ export const benefits = [
 ];
 
 export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
+   {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "https://t.me/SweavenDev",
   },
   {
     id: "4",
-    title: "Facebook",
+    title: "Linkdin",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.linkedin.com/in/yoseftesfaye-jr/",
   },
 ];
